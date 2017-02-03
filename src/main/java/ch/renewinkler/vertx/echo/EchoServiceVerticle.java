@@ -2,7 +2,9 @@ package ch.renewinkler.vertx.echo;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.json.JsonObject;
+import org.springframework.stereotype.Component;
 
+@Component
 public class EchoServiceVerticle extends AbstractVerticle {
 
     public static final String ADDRESS = "echo-service";
