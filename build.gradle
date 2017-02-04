@@ -24,5 +24,4 @@ allprojects {
         compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.1.RELEASE'
     }
 
-
 }

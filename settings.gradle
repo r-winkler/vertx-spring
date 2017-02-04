@@ -2,7 +2,3 @@ rootProject.name = 'demo'
 include ':vertx-spring-example-1'
 include ':vertx-spring-example-2'
 include ':vertx-spring-example-3'
-
-project(':vertx-spring-example-1').projectDir = "$rootDir/vertx-spring-example-1" as File
-project(':vertx-spring-example-2').projectDir = "$rootDir/vertx-spring-example-2" as File
-project(':vertx-spring-example-3').projectDir = "$rootDir/vertx-spring-example-3" as File
