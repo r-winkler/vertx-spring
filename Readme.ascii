@@ -1,0 +1,10 @@
+This project demonstrates how to use Spring Boot with Vertx.
+
+= Example 1
+Demonstrates how to start with *Spring Boot* 2 Spring Verticle.
+
+= Example 2
+Demonstrates how to start with *Spring Boot* 1 Spring Verticle and 1 non-Spring Verticle
+
+= Example 3
+Demonstrates how to start with *plain Java* 1 Spring Verticle and 1 non-Spring Verticle
