@@ -1,0 +1,28 @@
+allprojects {
+    apply plugin: 'maven'
+    apply plugin: 'java'
+
+    group = 'ch.renewinkler'
+    version = '0.0.1-SNAPSHOT'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+
+    repositories {
+        mavenLocal()
+        maven { url "http://repo.maven.apache.org/maven2" }
+    }
+
+    dependencies {
+        compile group: 'io.vertx', name: 'vertx-core', version: '3.3.3'
+        compile(group: 'org.springframework.boot', name: 'spring-boot-starter', version: '1.5.1.RELEASE') {
+            exclude(module: 'commons-logging')
+        }
+        compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.1.RELEASE'
+    }
+
+
+}
